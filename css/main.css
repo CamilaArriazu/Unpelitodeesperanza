@@ -176,6 +176,14 @@ p {
   border: black 2px solid;
   padding: 10px; }
 
+@media screen and (max-width: 768px) {
+  .desaparecer {
+    display: none; } }
+
+@media screen and (max-width: 500px) {
+  .desaparecer {
+    display: none; } }
+
 .borde {
   border: #F24BA7 10px solid; }
 
