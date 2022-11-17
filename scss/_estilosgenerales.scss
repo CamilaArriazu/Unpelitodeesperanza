@@ -1,0 +1,115 @@
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .logo{
+        height: 200px;
+        width: auto;
+    }
+}
+
+.navbar-nav{
+    background-color: #F24BA7;
+}
+
+.btn{
+    background-color: #F24BA7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: #F24BA7;
+    border: #F24BA7 1px solid;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{ 
+    text-align: center;
+    background-color: #F299CA;
+    padding: 10px;
+}
+
+h3{
+    text-align: center;
+}
+
+.footer{
+    background-color: #F24BA7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .redes{
+        width: 50px;
+        margin: 5px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.icono{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blanco{
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rosa-oscuro{
+    background-color: #F24BA7;
+    border: white solid 10px;
+    padding: 30px;
+}
+
+.rosa{
+    margin: 10px;
+    background-color: #F299CA;
+}
+
+.background{
+    background-image: url(../multimedia/background1.png);
+    padding: 30px;
+}
+
+.card-group{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .card-body{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

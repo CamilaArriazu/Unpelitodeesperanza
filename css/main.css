@@ -1,0 +1,184 @@
+* {
+  font-family: Arial, Helvetica, sans-serif; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  header .logo {
+    height: 200px;
+    width: auto; }
+
+.navbar-nav {
+  background-color: #F24BA7; }
+
+.btn {
+  background-color: #F24BA7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+button {
+  background-color: #F24BA7;
+  border: #F24BA7 1px solid; }
+
+h1 {
+  text-align: center; }
+
+h2 {
+  text-align: center;
+  background-color: #F299CA;
+  padding: 10px; }
+
+h3 {
+  text-align: center; }
+
+.footer {
+  background-color: #F24BA7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .footer .redes {
+    width: 50px;
+    margin: 5px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.icono {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.blanco {
+  margin: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.rosa-oscuro {
+  background-color: #F24BA7;
+  border: white solid 10px;
+  padding: 30px; }
+
+.rosa {
+  margin: 10px;
+  background-color: #F299CA; }
+
+.background {
+  background-image: url(../multimedia/background1.png);
+  padding: 30px; }
+
+.card-group {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .card-group .card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.timeline {
+  background-image: url(../multimedia/ba); }
+  .timeline:before {
+    content: '';
+    background: #C5CAE9;
+    width: 5px;
+    height: 65%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  .timeline .timeline-item {
+    width: 100%;
+    margin-bottom: 70px; }
+    .timeline .timeline-item .timeline-img {
+      width: 30px;
+      height: 30px;
+      background: #F24BA7;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      margin-top: 25px;
+      margin-left: -15px; }
+
+.timeline-content2 {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3); }
+
+.timeline-content1 {
+  position: relative;
+  width: 45%;
+  left: 60%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3); }
+
+.date {
+  background: #FF4081;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.h3 {
+  text-align: left;
+  font-size: 20px; }
+
+p {
+  text-align: center;
+  color: black; }
+
+.imagen {
+  width: 50px;
+  height: auto; }
+
+.izquierda {
+  text-align: left;
+  margin: 30px; }
+
+.derecha {
+  text-align: right;
+  list-style-type: none;
+  background-color: #F24BA7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.imagen1 {
+  width: 100px;
+  height: auto; }
+
+.falsoboton {
+  border: black 2px solid;
+  padding: 10px; }
+
+.borde {
+  border: #F24BA7 10px solid; }
+
+form {
+  background-color: #F299CA;
+  padding: 10px; }
