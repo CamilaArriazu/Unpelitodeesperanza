@@ -2,10 +2,27 @@
     .desaparecer{
         display: none;
     }
+    .logo{
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
 
 @media screen and (max-width: 500px) {
     .desaparecer{
         display: none;
+    }
+    .logo{
+        width: 375px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }

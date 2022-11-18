@@ -43,8 +43,9 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="row">
+    <main class="container-fluid">
+        <h1 class="background" data-aos="flip-left">¿Querés contactarnos?</h1>
+        <div class="row card-group">
             <div class="blanco col-md-4 animate__animated animate__zoomIn">
                 <img class="icono" src="../multimedia/ubicación.png" alt="">
                 <h3>Dirección</h3>
@@ -62,28 +63,30 @@
                 <p>Miercoles y jueves: 18 a 20hs</p>
                 <p>Sábados: 10 a 12hs.</p>
             </div>
-            <h2 class="background" data-aos="flip-left"><strong>CONTACTO</strong></h2>
+            <hr>
+            <h2 class="blanco"><strong>FORMULARIO</strong></h2>
+            <hr>
             <h3>Datos para solicitar pelucas</h3>
-            <form>
+            <form class="rosa col-6">
                 <div class="input-group">
                     <span class="input-group-text">Nombre y Apellido</span>
-                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="First name" class="form-control col-12">
                 </div>
                 <div>
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control col-12" id="inputEmail4">
                 </div>
                 <div>
                     <label for="inputPassword4" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <input type="password" class="form-control col-12" id="inputPassword4">
                 </div>
                 <div>
                     <label for="inputCity" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" class="form-control col-12" id="inputCity">
                 </div>
                 <div>
                     <label for="inputState" class="form-label">Provincia</label>
-                    <select id="inputState" class="form-select">
+                    <select id="inputState" class="form-select col-12">
                     <option selected>Buenos Aires</option>
                     <option selected>Ciudad Autonoma de Buenos Aires</option>
                     <option selected>Catamarca</option>
@@ -123,7 +126,7 @@
                     </div>
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-primary">Enviar formulario</button>
+                    <button type="submit" class="btn btn-primary col-12">Enviar formulario</button>
                 </div>
             </form>
         </div>
