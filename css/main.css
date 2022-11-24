@@ -4,11 +4,15 @@
 header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center; }
   header .logo {
-    height: 200px;
-    width: auto; }
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
 
 .navbar-nav {
   background-color: #F24BA7; }
@@ -19,6 +23,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.btn:focus {
+  background-color: #F299CA; }
 
 button {
   background-color: #F24BA7;
@@ -93,6 +100,19 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
+
+.noticia {
+  padding: 20px; }
+
+.noti {
+  width: 300px;
+  height: 150px; }
+
+.justify {
+  text-align: justify; }
+
+span {
+  font-weight: bolder; }
 
 .timeline {
   background-image: url(../multimedia/ba); }
@@ -176,17 +196,38 @@ p {
   border: black 2px solid;
   padding: 10px; }
 
+.carousel-item {
+  height: 500px;
+  width: 500px; }
+
+.pelucas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "titulo1 titulo2" "lista1 lista2"; }
+
+.titulo1 {
+  grid-area: "titulo1"; }
+
+.titulo2 {
+  grid-area: "titulo2"; }
+
+.lista1 {
+  grid-area: "lista1"; }
+
+.lista2 {
+  grid-area: "lista2"; }
+
 @media screen and (max-width: 768px) {
   .desaparecer {
-    display: none; } }
+    display: none; }
+  .logo {
+    width: 10px;
+    height: auto; } }
 
 @media screen and (max-width: 500px) {
   .desaparecer {
-    display: none; } }
-
-.borde {
-  border: #F24BA7 10px solid; }
-
-form {
-  background-color: #F299CA;
-  padding: 10px; }
+    display: none; }
+  .logo {
+    width: 10px;
+    height: auto; } }
