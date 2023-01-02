@@ -9,6 +9,7 @@
     <title>Un Pelito de Esperanza | pelucas</title>
     <link rel="shortcut icon" href="../multimedia/Logo (1).ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link
     rel="stylesheet"
@@ -17,40 +18,43 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body>
+<body class="container-fluid">
     <header>
-        <div>
-            <img class="logo" src="../multimedia/Logo 2.png" alt="Logo de la fundación">
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../multimedia/LOGO.png" alt="" width="100" height="100">
+                </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="quieroayudar.html">Quiero ayudar</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Quiero ayudar
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="donardinero.html">Donar dinero</a></li>
+                                <li><a class="dropdown-item" href="donarcabello.html">Donar cabello</a></li>
+                                <li><a class="dropdown-item" href="donarmateriales.html">Donar materiales</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="quieropeluca.html">Quiero una peluca</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="rosa">
-        <div class="background">
+    <main class="grey">
             <h1>¿Necesitas una peluca?</h1>
             <div class="row card-group">
                 <div class="blanco col-md-5 animate__animated animate__zoomIn">
@@ -75,40 +79,25 @@
                 </div>
             </div>
         </div>
-        <div class="card-group">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Aclaración
-            </button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Aclaración</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        Tienen prioridad personas que son de Sgo del Estero, y aquellas que pertenecen a provincias sin bancos de pelucas
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="blanco">
+            <h2><strong>Aclaración</strong></h2>
+            <p>Tienen prioridad personas que son de Sgo del Estero, y aquellas que pertenecen a provincias sin bancos de pelucas.</p> 
         </div>
     </main>
-    <section class="conatiner-fluid">
-        <h3 class="background" id="bancos" data-aos="flip-left">BANCOS DE PELUCAS DE ARGENTINA</h3>
+    <section class="grey row">
+        <h2 id="bancos" data-aos="flip-left"><strong>Bancos de pelucas en Argentina</strong></h2>
         <iframe src="https://www.google.com/maps/d/embed?mid=1fl9RiE36vs1_hvW75DRiIA5DOe8L-73s&ehbc=2E312F" width="100%" height="480"></iframe>
-        <div class="card-group rosa pelucas">
-            <h3 class="background titulo1" id="requisitos" data-aos="flip-right">REQUISITOS</h3>
+        <div class="col-6 centrado">
+            <h3 id="requisitos" data-aos="flip-right">Requisitos</h3>
             <ul class="lista1">
                 <li class="izquierda">Certificado médico</li>
                 <li class="izquierda">Fotocopia de documento</li>
                 <li class="izquierda">Boleta de impuesto o certificado de residencia</li>
             </ul>
-            <h3 class="background titulo2" id="pautas" data-aos="flip-right">PAUTAS</h3>
-            <ol class="lista2">
+        </div>
+        <div class="col-6 centrado">
+            <h3 id="pautas" data-aos="flip-right">Pautas</h3>
+            <ol>
                 <li class="izquierda">Devolver en las mismas condiciones</li>
                 <li class="izquierda">Préstamo: periodo de 6 meses</li>
                 <li class="izquierda">Renovación del préstamo: 1 mes antes del vencimiento.</li>
@@ -116,83 +105,104 @@
                 <li class="izquierda">En caso de surgir algún inconveniente llevar inmediatamente al taller.</li>
             </ol>
         </div>
-        <h3 class="background" id="pf" data-aos="flip-left">PREGUNTAS FRECUENTES</h3>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                ¿Como se solicita una peluca?
-                </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Contactános por nuestras redes sociales o WhatsApp. Una vez que se presentan los requisitos solicitados se ingresa el pedido, se evalúa el stock y si no hay nada parecido se produce.</div>
+        <article>
+            <h2 id="pf" data-aos="flip-left">Preguntas Frecuentes</h3>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    ¿Como se solicita una peluca?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Contactános por nuestras redes sociales o WhatsApp. Una vez que se presentan los requisitos solicitados se ingresa el pedido, se evalúa el stock y si no hay nada parecido se produce.</div>
+                    </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                ¿Para quiénes hacemos las pelucas?
-                </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Están destinadas a pacientes oncológicos, quienes por la quimioterapia o los rayos se les cae el cabello</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    ¿Para quiénes hacemos las pelucas?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Están destinadas a pacientes oncológicos, quienes por la quimioterapia o los rayos se les cae el cabello</div>
+                    </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                ¿Son gratuitas?
-                </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Sí, nuestro trabajo es solidario y no cobramos por ello</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    ¿Son gratuitas?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Sí, nuestro trabajo es solidario y no cobramos por ello</div>
+                    </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                ¿Se regalan?
-                </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Las pelucas se dan en préstamo, una vez que ya no se usan se deben devolver para ser así reacondicionada y la reciba otra mujer.</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    ¿Se regalan?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Las pelucas se dan en préstamo, una vez que ya no se usan se deben devolver para ser así reacondicionada y la reciba otra mujer.</div>
+                    </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                ¿Las pelucas son de cabello natural?
-                </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Sí, se realizan con donaciones de la comunidad y de forma artesanal</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    ¿Las pelucas son de cabello natural?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Sí, se realizan con donaciones de la comunidad y de forma artesanal</div>
+                    </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingSix">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                ¿Cuánto tiempo puedo tener una peluca?
-                </button>
-                </h2>
-                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">El préstamo es por 6 meses, pero si la persona lo necesita por más tiempo se renueva el contrato.</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    ¿Cuánto tiempo puedo tener una peluca?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">El préstamo es por 6 meses, pero si la persona lo necesita por más tiempo se renueva el contrato.</div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div>   
+        </article>
     </section>
     <footer>
-        <div class="footer">
-            <a href="https://www.facebook.com/unpelitodeesperanzasgo/" target="_blank">
-                <img class="redes" src="../multimedia/facebook.png" alt="facebook">
-            </a>
-            <a href="https://www.instagram.com/unpelitodeesperanzasgo/" target="_blank">
-                <img class="redes" src="../multimedia/instagram.png" alt="Instagram">
-            </a>
-            <a href="tel:+5493853000251" target="_blank">
-                <img class="redes" src="../multimedia/whatsapp.png" alt="Whatsapp">
-            </a>
-            <a href="https://www.youtube.com/channel/UCcNCmTZULFk-RR0J-nSEMaw" target="_blank">
-                <img class="redes" src="../multimedia/YouTube.png" alt="Youtube"> 
+        <div class="principio">
+            <p><strong>UBICACIÓN</strong></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14117.007437397651!2d-64.27363313022462!3d-27.802017400000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b520abe61cdb7%3A0xb549be3b9220ff74!2sAv.%20Alsina%201212%2C%20G4200HNJ%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1672391601150!5m2!1ses-419!2sar" width="200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Alsina 1212, Sgo. del Estero, capital.</p>
+        </div>
+        <div class="medio">
+            <img class="logopelito" src="../multimedia/LOGO.png" alt="">
+            <div class="footer">
+                <a href="https://www.facebook.com/unpelitodeesperanzasgo/" target="_blank">
+                    <img class="redes" src="../multimedia/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/unpelitodeesperanzasgo/" target="_blank">
+                    <img class="redes" src="../multimedia/instagram.png" alt="Instagram">
+                </a>
+                <a href="tel:+5493853000251" target="_blank">
+                    <img class="redes" src="../multimedia/whatsapp.png" alt="Whatsapp">
+                </a>
+                <a href="https://www.youtube.com/channel/UCcNCmTZULFk-RR0J-nSEMaw" target="_blank">
+                    <img class="redes" src="../multimedia/YouTube.png" alt="Youtube"> 
+            </div>
+        </div>
+        <div class="final">
+            <p><strong>INFORMACIÓN</strong></p>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
+                <li><a href="donardinero.html">Donar dinero</a></li>
+                <li><a href="donarcabello.html">Donar cabello</a></li>
+                <li><a href="donarmateriales.html">Donar materiales</a></li>
+                <li><a href="quieropeluca.html">Quiero peluca</a></li>
+            </ul>
         </div>
     </footer>
     <script>
